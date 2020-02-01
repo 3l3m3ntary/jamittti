@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Comic1
+  - Comic2
+  - Comic3
+  - Comic4
   layers:
   - Default
   - TransparentFX
