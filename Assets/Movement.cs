@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     public float speed;
     Vector3 direction;
 
-
+    public GameObject Comic1, Comic2, Comic3, Comic4;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
 
     void GetInput()
     {
-        if (Input.GetKeyDown("d"))
+        if (Input.GetKeyDown("l"))
         {
             direction = Vector3.forward;
         }
@@ -39,6 +39,30 @@ public class Movement : MonoBehaviour
         else if (Input.GetKeyUp("a"))
         {
            // rb.velocity = Vector3.zero;
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Comic1"))
+        {
+            Comic1 = collision.gameObject;
+            collision.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Comic2"))
+        {
+            Comic2 = collision.gameObject;
+            collision.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Comic3"))
+        {
+            Comic3 = collision.gameObject;
+            collision.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Comic4"))
+        {
+            Comic4 = collision.gameObject;
+            collision.gameObject.SetActive(false);
         }
     }
 }
