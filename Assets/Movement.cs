@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
     {
         GetInput();
         rb.AddForce(direction * speed);
+
         
     }
 
@@ -26,12 +27,12 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown("l"))
         {
-            direction = Vector3.forward;
+            direction = Vector3.forward.normalized;
         }
     
         else if (Input.GetKeyDown("a"))
         {
-           direction = Vector3.back;
+           direction = Vector3.back.normalized;
         }
 
     }
