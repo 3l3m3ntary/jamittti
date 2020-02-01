@@ -28,18 +28,12 @@ public class Movement : MonoBehaviour
         {
             direction = Vector3.forward;
         }
-        else if(Input.GetKeyUp("d"))
-        {
-           // rb.velocity = Vector3.zero;
-        }
+    
         else if (Input.GetKeyDown("a"))
         {
            direction = Vector3.back;
         }
-        else if (Input.GetKeyUp("a"))
-        {
-           // rb.velocity = Vector3.zero;
-        }
+
     }
 
     private void OnTriggerEnter(Collider collision)
