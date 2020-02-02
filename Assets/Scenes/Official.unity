@@ -1180,6 +1180,30 @@ PrefabInstance:
       propertyPath: ballero
       value: 
       objectReference: {fileID: 442451352}
+    - target: {fileID: 7014777164323911201, guid: ff39714dec515a540b452acbdd007c57,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: ad435a4e4a9c7ad40aa92754d70628e3,
+        type: 3}
+    - target: {fileID: 7099166502167839041, guid: ff39714dec515a540b452acbdd007c57,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ad435a4e4a9c7ad40aa92754d70628e3,
+        type: 3}
+    - target: {fileID: 5661608323904241725, guid: ff39714dec515a540b452acbdd007c57,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300004, guid: ad435a4e4a9c7ad40aa92754d70628e3,
+        type: 3}
+    - target: {fileID: 8607210905021799056, guid: ff39714dec515a540b452acbdd007c57,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: ad435a4e4a9c7ad40aa92754d70628e3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff39714dec515a540b452acbdd007c57, type: 3}
 --- !u!1001 &6717374233271941414
