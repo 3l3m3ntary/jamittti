@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     public Text timer;
     private float timeLeft = 20.0f;
     public GameObject endScreen;
+    public GameObject playa;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +26,12 @@ public class Timer : MonoBehaviour
         //timer.text = minutes + ":" + seconds;
         timeLeft -= Time.deltaTime;
         if (timeLeft <= 0)
-        {  
+        {
+            timeLeft = 0;
+            playa.GetComponent<Movement>().rb.constraints = RigidbodyConstraints.FreezeAll;
+
             endScreen.SetActive(true);
+            //Time.timeScale = 0f;
         }
         timer.text = timeLeft.ToString("f1");
         

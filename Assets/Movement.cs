@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private Rigidbody rb;
+    public Rigidbody rb;
     public float speed;
     Vector3 direction;
     //public bool c1, c2, c3, c4 = false;
