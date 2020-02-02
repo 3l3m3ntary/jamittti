@@ -10,8 +10,8 @@ public class Reset : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         ball.transform.position = new Vector3(40, 25, 0);
-        Time.timeScale = 0f;
         menu.SetActive(true);
+        Time.timeScale = 0f;
 
     }
 }

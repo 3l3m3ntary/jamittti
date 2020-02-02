@@ -25,8 +25,7 @@ public class Timer : MonoBehaviour
         //timer.text = minutes + ":" + seconds;
         timeLeft -= Time.deltaTime;
         if (timeLeft <= 0)
-        {
-            Time.timeScale = 0f;
+        {  
             endScreen.SetActive(true);
         }
         timer.text = timeLeft.ToString("f1");

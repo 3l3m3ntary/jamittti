@@ -6,13 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-
-
+   
 
     public void StartOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void GuitGame()
