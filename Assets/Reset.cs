@@ -5,15 +5,13 @@ using UnityEngine;
 public class Reset : MonoBehaviour
 {
     public GameObject ball;
-    
-
-    void Update()
-    {
-     
-    }
+    public GameObject menu;
+   
     private void OnTriggerEnter(Collider other)
     {
         ball.transform.position = new Vector3(40, 25, 0);
         Time.timeScale = 0f;
+        menu.SetActive(true);
+
     }
 }

@@ -25,12 +25,12 @@ public class Movement : MonoBehaviour
 
     void GetInput()
     {
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKeyUp("l"))
         {
             direction = Vector3.forward.normalized;
         }
     
-        else if (Input.GetKeyDown("a"))
+        else if (Input.GetKeyUp("a"))
         {
            direction = Vector3.back.normalized;
         }
